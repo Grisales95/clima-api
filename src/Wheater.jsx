@@ -44,7 +44,7 @@ return(
 
         <p>Min Temperature: {units === 'celsius' ? `${Math.round(temp_min)} °C` : `${toCelsius(temp_min)} °F `}</p>
 
-        <p>Min Temperature: {units === 'celsius' ? `${Math.round(temp_max)} °C` : `${toCelsius(temp_max)} °F `}</p>
+        <p>Max Temperature: {units === 'celsius' ? `${Math.round(temp_max)} °C` : `${toCelsius(temp_max)} °F `}</p>
 
         <p>Humidity: {humidity}%</p>
 
