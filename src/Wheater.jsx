@@ -23,8 +23,9 @@ export default function Wheater () {
     })  
   }
   if (!clima.weather) {
-    return <span>Loading...</span>;
-}
+    return <div className="loading"><h2>Loading...</h2></div>
+            
+ }
 
 const iconUrl = `https://openweathermap.org/img/wn/${clima.weather[0].icon}@2x.png`
 
@@ -32,8 +33,11 @@ const { temp, temp_min, temp_max, humidity } = clima.main
 
 return(
     <div className = "container">
+
       <h1>Weather App</h1>
+
       <div className="container-app">
+        
         <h2>{clima.name} - {clima.sys.country}</h2>
 
         <img src={iconUrl} alt="weather"/>

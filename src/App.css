@@ -22,7 +22,8 @@
 }
 
 .container h1{
-  margin-top: 50px;
+  margin-top: 40px;
+  font-size: 2.5rem;
 }
 
 .container-app{
@@ -49,3 +50,23 @@
   margin-right: 5px;
 }
 
+.loading{
+  font-size: 2.5rem;
+  padding-top: 200px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.loading h2{
+  display: inline;
+  background-color:#003344;
+  border-radius: 15px;
+  padding: 15px;
+}
+
+
+@media (max-width:425px){
+  .container-app{
+    width: 70%;
+  }
+}
