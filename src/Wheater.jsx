@@ -17,7 +17,7 @@ export default function Wheater () {
 
   const getData = () => {
     navigator.geolocation.getCurrentPosition(async location => {
-      const data = await fetch(`http://api.openweathermap.org/data/2.5/weather?lat=${location.coords.latitude}&lon=${location.coords.longitude}&units=metric&appid=9f904ebccd4a18da98b14f547a4efbaf`)
+      const data = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${location.coords.latitude}&lon=${location.coords.longitude}&units=metric&appid=9f904ebccd4a18da98b14f547a4efbaf`)
       const info = await data.json()
       setClima(info)
     })  
